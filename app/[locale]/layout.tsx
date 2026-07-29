@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description: "O'zbekiston bo'ylab tezkor yetkazib berish va qulay narxlar",
     images: [
       {
-        url: 'https://uzun-io.vercel.app/og-image.jpg', // Public papkachi rasmga to'g'ridan-to'g'ri yo'l
+        url: 'https://uzun-io.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Uzun Market Preview',
