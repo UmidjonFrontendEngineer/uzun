@@ -238,7 +238,7 @@ export default function CartPage() {
                             }`}>
                             <motion.button
                               whileTap={{ scale: 0.9 }}
-                              onClick={() => decrementQuantity(item.id)}
+                              onClick={() => decrementQuantity(item.id!)}
                               className="p-2.5 hover:bg-gray-100 dark:hover:bg-zinc-700 transition-colors"
                             >
                               <Minus size={14} />
@@ -248,7 +248,7 @@ export default function CartPage() {
                             </span>
                             <motion.button
                               whileTap={{ scale: 0.9 }}
-                              onClick={() => incrementQuantity(item.id)}
+                              onClick={() => incrementQuantity(item.id!)}
                               className="p-2.5 hover:bg-gray-100 dark:hover:bg-zinc-700 transition-colors"
                             >
                               <Plus size={14} />
@@ -265,7 +265,7 @@ export default function CartPage() {
                           {/* O'chirish */}
                           <motion.button
                             whileTap={{ scale: 0.85 }}
-                            onClick={() => toggleCart(item.id)}
+                            onClick={() => toggleCart(item.id!)}
                             className="text-gray-500 hover:text-red-600 dark:hover:text-red-400 transition-colors p-2 rounded-xl hover:bg-red-50 dark:hover:bg-red-950/30"
                           >
                             <Trash2 size={18} />
