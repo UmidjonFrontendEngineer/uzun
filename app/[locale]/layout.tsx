@@ -19,14 +19,6 @@ export const metadata: Metadata = {
   icons: {
     icon: '/vercel.svg'
   },
-  images: [
-    {
-      url: '/opengraph-image',
-      width: 1200,
-      height: 630,
-      alt: 'Uzun Market Preview',
-    },
-  ],
   alternates: {
     canonical: '/',
   },
@@ -44,6 +36,14 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "Uzun.uz — Milliy marketpleks",
     description: "O'zbekiston bo'ylab tezkor yetkazib berish va qulay narxlar",
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Uzun Market Preview',
+      },
+    ],
   },
 };
 
