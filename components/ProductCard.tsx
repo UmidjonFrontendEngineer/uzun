@@ -26,6 +26,7 @@ interface ProductCardProps {
   imageUrl?: string;
   image?: string;
   rating?: number | { rate: number; count: number };
+  reviewCount?: number;
   locale: string;
 }
 
