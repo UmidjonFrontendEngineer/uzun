@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-export const runtime = 'edge';
+// export const runtime = 'edge'; <- BU QATORNI O'CHIRIB TASHLang
 
 export async function generateStaticParams() {
     const locales = ['uz', 'ru', 'en'];
