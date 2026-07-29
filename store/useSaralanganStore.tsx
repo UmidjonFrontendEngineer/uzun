@@ -20,5 +20,8 @@ export const useSaralanganStore = create<saralanganState>()(
                 }
             }),
         }),
+        {
+            name: 'saralangan-storage'
+        }
     )
 );
