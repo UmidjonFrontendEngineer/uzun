@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Wrapper from "@/components/Wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,12 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="uz">
-      <body className={`${inter.className} bg-gray-50 min-h-screen flex flex-col justify-between`}>
+    <html lang="uz" className="bg-white">
+      <body className={`${inter.className} min-h-screen flex flex-col justify-between bg-white`}>
         <Header />
-        <div className="flex-1 bg-stone-50">
-          {children}
-        </div>
+        <Wrapper children={children} />
         <Footer />
       </body>
     </html>
