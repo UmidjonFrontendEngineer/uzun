@@ -255,7 +255,7 @@ export default function HomePage() {
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-800 text-white shadow-2xl">
           <div className="absolute -right-10 -bottom-10 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div 
+          <div
             ref={sliderRef}
             onScroll={handleScroll}
             onMouseDown={handleMouseDown}
@@ -265,8 +265,8 @@ export default function HomePage() {
             className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none scroll-smooth cursor-grab active:cursor-grabbing select-none"
           >
             {t.heroSlides.map((slide, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="w-full shrink-0 snap-center p-8 sm:p-12 min-h-[280px] sm:min-h-[300px] flex items-center"
               >
                 <div className="relative z-10 flex flex-col justify-center space-y-4 max-w-xl">
@@ -297,9 +297,8 @@ export default function HomePage() {
                 <button
                   key={index}
                   onClick={() => scrollToIndex(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    currentIndex === index ? 'w-6 bg-white' : 'w-2 bg-white/50'
-                  }`}
+                  className={`h-2 rounded-full transition-all ${currentIndex === index ? 'w-6 bg-white' : 'w-2 bg-white/50'
+                    }`}
                 />
               ))}
             </div>
@@ -334,10 +333,10 @@ export default function HomePage() {
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`px-5 py-2.5 rounded-2xl text-xs font-bold transition-all shrink-0 shadow-sm ${selectedCategory === cat.id
-                      ? 'bg-purple-600 text-white shadow-purple-500/30 shadow-md scale-105'
-                      : theme === 'dark'
-                        ? 'bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-800'
-                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200/60'
+                    ? 'bg-purple-600 text-white shadow-purple-500/30 shadow-md scale-105'
+                    : theme === 'dark'
+                      ? 'bg-zinc-900 text-zinc-300 hover:bg-zinc-800 border border-zinc-800'
+                      : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200/60'
                     }`}
                 >
                   {cat.label}
@@ -370,6 +369,7 @@ export default function HomePage() {
                 rating={item.rating?.rate || 4.8}
                 reviewCount={item.rating?.count || 120}
                 imageUrl={item.image}
+                locale={locale}
               />
             ))}
           </div>
